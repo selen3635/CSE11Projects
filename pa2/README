@@ -1,0 +1,94 @@
+Name:   Xiaolong Zhou
+Login:  cs11faug
+Date:   Oct 08, 2015
+File:   README
+Sources of Help: CS 11 webpage  Adam
+                 (hint: http://www.sdsc.edu/CCMS/DEX/doc/Basic-Unix-
+commands.htm)
+
+Program Descriptioin:
+
+OddEven:
+
+  This program is designed to compute the largest odd integer and smallest
+even integer based on the numbers that user entered. Users are required to
+enter a series of intergers (-1 -2 -3 0 1 2 3 etc.) Then program will find
+out the largest odd integer and smallest even integer. For instance, if user
+enter 1 2 3 4 5 6, then program will out put largest odd number is 5, and
+smallest even number is 2. In addition, if user only enter odd integers
+like (-3 1 5 7 9), then programm will only out put largest odd number which
+will be 9. Same thing if user only enter even integers, then program will only
+out put smallest even number. However, if user didn't enter anything, in this
+case program will tell you "No numbers entered." (type "javac OddEven.java"
+to compile then type "java OddEven" to run code. Then just enter integers,
+after that hold control and press D to get results).
+
+OddEvenEC:
+
+  This program is designed to compute two distinct largest odd integers and two
+distinct smallest integers based on the numbers that user entered. Users are
+required to enter a series of integers(-1 -2 -3 0 1 2 3 etc.) For example,
+if user enter 0 1 2 3 4 5 6 7 8, then program will out put largest odd number
+is 7 and second largest odd number is 5. Smallest even number is 0 and second
+smallest even number is 2. Nevertheless, if user only entered a series of
+odd numbers, like (1 3 5 7 9) then program will only out put largest odd 
+number is 9 and second largest odd number is 7. Same thing if user only
+enter even numbers, then program will only out smallest even number, and also
+second smallest even number. However, if user only enter one odd or one even
+number, then program will only output largest odd or smallest even number.
+Moreover, if user didn't enter anything, then program just out put "No
+numbers entered."(type "javac OddEvenEC.java"to compile then type
+ "java OddEvenEC" to run code. Then just enter integers,
+after that hold control and press D to get results.
+NO QUOTATION MARK)
+
+DraggingMickey:
+
+  This program is going to create a creen and draw a mickey on the screen.
+Just simply move your mouse into screen it will show the instructions.
+Follow the instructions, click on screen anywhere it will appear a mickey
+center on your mouse. Then press anywhere on mickey hold and drag anywhere
+within the screen. When you are dragging mickey, mickey will turn to red
+color. When you stop and release your mouse, it will turn back to black
+color. You can try move your mouse out of screen, mickey will disappear.
+However, if you move your mouse back to screen, and click on screen again,
+it will create a new mickey for you, and you drag it again. The funny thing
+is, you can move mickey to the edge of screen as long as your mouse still
+inside of screen.
+(Type "javac -cp ./Acme.jar:./objectdraw.jar:. DraggingMickey.java" to 
+compile, then type "java -cp ./Acme.jar:./objectdraw.jar:. DraggingMickey"
+to run the code. After that you can play with it. NO QUOTATION MARK)
+
+
+Short Response:
+
+1. Why is it considered an integrity violation if a student submits code
+   copied from someone/somewhere else?
+   
+   Because as a student, we have to be honesty, respectful for our
+   homework, we should do homework by ourself. Of course we can ask
+   questions about homework, but if we copy someone/somewhere work,
+   it will consider as cheating. This violates the rules.
+   This is integrity violation.
+
+2. What is the Linux command to rename a file?
+   What is the command to copy a file?
+   mv old-filename new-filename
+   cp old-filename new-filename
+   (hint: http://www.sdsc.edu/CCMS/DEX/doc/Basic-Unix-
+   commands.htm)
+
+3. What are three ways to enter insert mode in vim?
+   "i" "a" "o"
+
+4. What is a method?
+   A method is like a funcion with a set of code, we can call it at any
+   point inside our program by utlizing the method name.
+   (idea from:
+   http://mathbits.com/MathBits/Java/Methods/Lesson1.htm)   
+
+5. What happens when you type ":split" in command mode in vim?
+   It will split the terminal screen into two screen horizontally.
+ 
+6. Answer : Tab
+
