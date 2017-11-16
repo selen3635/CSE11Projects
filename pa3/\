@@ -1,0 +1,138 @@
+
+
+import objectdraw.*;
+
+
+public class Deadmau5 {
+
+  private FilledOval leftEar, rightEar, face, leftEye, rightEye;
+  private FilledArc mouth;
+  private static final int FACE_RADIUS = 50;
+  private static final int EAR_RADIUS = 40;
+  private static final int EYE_RADIUS = 15;
+  private static final int MOUTH_RADIUS = 40;
+
+  private static final int startAngle = 180;
+  private static final int arcAngle = 180;
+
+  // Center of each ear is this offset up and over (x and y) 
+  // from center of face.
+  private static final int EAR_OFFSET = 50;  
+  private static final int EYE_OFFSET = 20;
+
+  private DrawingCanvas canvas;
+
+  private boolean mickeyCreate = false;
+ 
+
+  // ctor
+  public Deadmau5 ( Location point, DrawingCanvas canvas) {
+
+    double mouse_X = point.getX();
+    double mouse_Y = point.getY();
+
+    if ( mickeyCreate == false ) {
+    
+      // draw a new mickey ear
+      leftEar = new FilledOval ( mouse_X - FACE_RADIUS - EAR_RADIUS,
+        mouse_Y - FACE_RADIUS - EAR_RADIUS, EAR_RADIUS + EAR_RADIUS,
+        EAR_RADIUS + EAR_RADIUS, canvas);
+
+      rightEar = new FilledOval ( mouse_X - EAR_RADIUS + EAR_OFFSET,
+        mouse_Y - FACE_RADIUS - EAR_RADIUS, EAR_RADIUS + EAR_RADIUS,
+        EAR_RADIUS + EAR_RADIUS, canvas);
+
+      face = new FilledOval ( mouse_X - FACE_RADIUS, mouse_Y - FACE_RADIUS,
+        FACE_RADIUS + FACE_RADIUS, FACE_RADIUS + FACE_RADIUS, canvas);
+
+      leftEye = new FilledOval ( mouse_X - EYE_OFFSET - EYE_OFFSET,
+        mouse_Y - EYE_OFFSET - EYE_OFFSET, EYE_OFFSET + EYE_OFFSET,
+        EYE_OFFSET + EYE_OFFSET, canvas);
+
+      rightEye = new FilledOval ( mouse_X, mouse_Y - EYE_OFFSET - EYE_OFFSET,
+        EYE_OFFSET + EYE_OFFSET, EYE_OFFSET + EYE_OFFSET, canvas);
+
+      mouth = new FilledArc ( mouse_X - MOUTH_RADIUS,
+        mouse_Y - MOUTH_RADIUS, MOUTH_RADIUS
+        + MOUTH_RADIUS, MOUTH_RADIUS + MOUTH_RADIUS, startAngle, arcAngle,
+        canvas);
+    }
+  }
+
+  public boolean contains ( Location point) {
+  
+    if ( leftEar.contains(point) || rightEar.contains(point)
+        || face.contains(point) ) {
+
+      return true; 
+    }
+
+    else {
+      return false;
+    }
+
+  }
+
+  public boolean inFace ( Location point) {
+    
+    if ( face.contains(point)) {
+
+      return true;
+    }
+
+    else {
+      return false;
+    }
+
+  }
+
+  public boolean inLeftEar ( Location point) {
+
+    if ( leftEar.contains(point)) {
+
+      return true;
+    }
+
+    else {
+      return false;
+    }
+
+  }
+
+  public boolean inRightEar ( Location point) {
+
+    if ( rightEar.contains(point)) {
+
+      return true;
+    }
+ 
+    else {
+      return false;
+    } 
+  }
+
+  public void move ( double dx, double dy) {
+
+    
+
+    
+  }
+
+  public void removeFromCanvas() {
+
+
+  }
+
+  public void flipLeft() {
+
+  }
+
+  public void flipRight() {
+
+  }
+
+  public void flip() {
+
+  }
+
+}

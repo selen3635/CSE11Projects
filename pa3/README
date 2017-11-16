@@ -1,0 +1,110 @@
+/**
+ *Name:    Xiaolong Zhou
+ *Login:   cs11faug
+ *Date:    Oct 14, 2015
+ *File:    README
+ *Source of help: karan, cse11 website
+ */
+
+Program Description:
+
+Triangles:
+  
+  This program is design to draw triangles while using "*". The side of
+triangle is based on the number that user entered. Program will prompt
+user to enter number from 2 to 19 (2 and 19 are included). If user enter
+number that is less than 2 or bigger than 19 will result in error, in this
+case program will prompt user to enter valid number. If user entered valid
+number, program will draw 4 triangles, and there is one space between each
+triangle. For instance, if user enter number 5. Then program will draw 4 
+triangles while each side has five "*".
+
+Deadmau5:
+
+  This program is design to draw a mickey on canvas. User can simply click
+on canvas to create a new mickey. Also user can press on any part of mickey
+and hold to drag mickey around within canvas. In addition, user can press
+and hold on mickey's left ear for more than half second, mickey will flip
+to left. If user press and hold on mickey's right ear for more than half
+second, mickey will flip to right. If user press and hold on mickey's face
+for more than half second, mickey's face will flip. However, if user click
+on overlapping area which is between face and ears, face has priority. This
+mean it will flip mickey's face. If user's insertion point out of canvas,
+mickey will disappear. If user enter canvas again, it will show
+ instructions on canvas, and user can click again to create a new mickey
+ within canvas.
+
+RotatingDeadmau5 (EC):
+
+  This program is design to create a mickey on canvas. User can simply click
+on canvas to create a mickey. Of course, user can press on mickey and drag
+it within canvas. Moreover, there is more funny with this program. User can
+press and hold on mickey's ear for more than half second to rotate mickey.
+For example, if user press and hold on mickey's left ear for more than half
+second, mickey will rotate 90 degrees counter clockwise. If user press and
+hold on mickey's right ear for more than half second, mickey will rotate 90
+degrees clockwise. what's more? The color of mickey is always changing
+while user rotate it. However the color of mickey is based on the direction
+that mickey face to. When mickey is face up(two ear on top, face on bottom)
+, the color is always black. When mickey is face left(two ears on left,
+face on the right), the color is always blue. When mickey is face down 
+(two ear on bottom, face on top), the color is always green. When mickey is
+face right( two ears on right, face on left), the color is always red.
+Also, mickey can be centered to window by pressing and holding on mickey's
+face for more than half second.
+
+
+
+Short Response:
+
+1. How do you jump to a certain line number in your code with a single
+   command in vim?
+  
+   Must be in command mode, type line number(where you want to jump)
+   with capital G. For instance, if user want to jump to line 35,
+   then in command mode, just type 35G. 
+
+2. What command sets auto-indentation in vim? What command turns off
+   (unsets) auto-indentation in vim?
+   Type ":set autoindent" to set auto-indentation.
+   Type ":set noautoindent" to turn off auto-indentation.
+   (http://vim.wikia.com/wiki/Indenting_source_code)
+   (http://vim.wikia.com/wiki/How_to_stop_auto_indenting)
+
+3. What is the command to undo changes in vim?
+
+   In command mode, type "u" to undo the last change in vim.
+
+4. In vim, in command mode how do you move forward one word in a line of
+   code? Move back one word? (Not arrow keys)
+
+   l - move forward one word
+   h - move back one word
+
+5. How can you remove all.class files in a Unix directory with a single
+   command?
+
+   rm *.class
+
+6. How do you remove a Unix directory? Define the commands you would run
+   on the terminal when the directory is empty and when it is not empty.
+   How do these command(s) differ?
+  
+   Type "rmdir directoryname" in terminal to remove a directory.(empty)
+   Type "rm -rf directory" in terminal to remove a directory. (not empty)
+
+   The first one will prompt a verification if there is content in folder.
+   The second one will force delete entire folder and its contents without
+   prompting for user verrification.
+   (https://answers.yahoo.com/question/index;)
+  
+7. What is the command to clear a Unix terminal screen? 
+
+   Type "clear" to clear terminal screen.
+   (https://en.wikipedia.org/wiki/Clear_%28Unix%29)
+
+
+
+
+
+
