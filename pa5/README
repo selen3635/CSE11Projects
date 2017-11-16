@@ -1,0 +1,97 @@
+/**
+ * Name:   Xiaolong Zhou
+ * Login:  cs11faug
+ * Date:   Oct 27, 2015
+ * File:   README
+ */
+
+
+Program Description:
+
+Puzzle Game:
+  This program is designed for user having fun with reordering subpictures
+into a whole complete image. There are nine disordered images with 100 pixe
+* 100 pixel on the right hand side of canvas, and also nine empty border
+with 100 pixel * 100 pixel on the left hand side canvas. The images are
+disordered at begining. User can simply press and hold on image then drag
+it arround canvas. However the center of image can not be dragged out of 
+canvas. But if user reside the canvas, lets say if user resize canvas to 
+larger. In this case, since canvas is bigger, so that user have more space
+to drag the picture, but again, the center of image still can not be out
+of the new size of canvas. Same thing if user resize canvas to smaller.
+Consequently, no matter what size of canvas, the center of image has to be
+inside of canvas before user win the game.
+  The aim of this game is to let user drag images from right hand side of
+canvas and place it correctly into left hand side of border. Each image has
+their fixed position. User can drag images to left border and release it.
+If the image go to right position, then the image will automatically lock
+into border, and the color of border will change to green in the mean time.
+Otherwise, the color of border still stay black, which mean user place 
+image into wrong position. Program will automatically lock image for user
+only when user drag image to correct border, and the center of image is
+within a 50 by 50 pixels square in the center of border. At this moment, if
+user release their mouse, the image will be locked into that border which
+means user place it into right position. So just keep finish the rest of
+images. After user place last piece of image into right position, all
+borders will disappear, and there will be a green text "YOU WIN!!!" appear
+on the right side of canvas in the same time. This means user has placed
+all images into correct position, and win the game. :)
+
+EC PART ( BOTH):
+  
+  Yeah, now this program has some more functions compare to previous one.
+The basic functions are all same. However, after user win the game, and get
+win meassage on the canvas. Now user is allowed to drag the entire image
+arround canvas, and this time, the center of image can be off canvas.
+Basically, user can drag all most whole image off canvas, but if user
+resize canvas to larger, user will be able to see image again. Then user
+can still drag it arround canvas. Moreover, if user click on anywhere on
+the complete image, it will restart the game which mean everything will
+go back to begining. ( Win message will disappear also)All nine 
+image will be disordered again, so thait user can play with it again.
+Have fun. :)
+
+
+Short Response:
+
+1. In vim, how do you move the cursor to the end of a line with a single
+  command? To the begining of a line with a single command?
+
+  In command mode, $ will go to the end of line, and
+                   0 will go to the begining of line.
+
+
+2. How do you hight/select a line in vim?
+
+   V  
+
+3. What does the keyword static mean in regards to variables?
+
+    From the website:
+    "The static keyword in Java means that the variable or function is
+    shared between all instances of that class as it belongs to the
+    type, not the actual object themselves."
+    (http://stackoverflow.com/questions/413898/what-does-the-static-
+     keyword-do-in-a-class)
+
+4. What does the keyword static mean in regards to methods? Provide an 
+  example use of a static method.
+
+  "Static" mean that the mothod is associated with the class, not a 
+  specific instance(object) of that class. This means that you can call
+  all a static method without creating an object of the class."
+
+  (http://stackoverflow.com/questions/2390063/what-does-public-
+   static-void-mean-in-java)
+
+5. What is overriding? Give an example from a previous/current assignment.
+
+  "overriding mean to override the functionality of an existing method"
+  (http://www.tutorialspoint.com/java/java_overriding.htm)
+
+  public void 
+
+6. Using the cut command, how do you extract out only the columns 5 through
+  13 in a file named foo?
+
+   cut -c5-13 foo
