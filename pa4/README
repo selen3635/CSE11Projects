@@ -1,0 +1,87 @@
+/**
+ * Name:    Xiaolong Zhou
+ * Login:   cs11faug
+ * Date:    Oct 19, 2015
+ * File:    README
+ * Source of help: karan lala, cseweb
+ */
+
+Program Description:
+
+ResizablePizzaSliceController:
+
+   This program is designed to draw pizzas on canvas. Canvas is separated
+into four quadrant. User can simply click anywhere on canvas to draw pizza
+. Each canvas will show different color of pizza, and all pizza is point to
+the intersections of two lines. Futhermore, user can also press and drag
+lines arround canvas. The color of pizzas will change while user drag the
+line, because the color of pizzas if based on which quadrant they are in.
+Moving the lines and creating more pizza, new pizza will still point to
+intersection of lines, but old pizzas will keep old orientation. In
+addition, user can also resize the frame, but lines will stay same
+proportional to where they were on the canvas. In the meantime, pizza will
+stay in the same position where they were created. The funny thing is pizzas
+are not static, they are growing and shrinking all the time on the canvas.
+
+
+ResizableSliceControllerEC:
+
+   This is a improvement program based on ResizablePizzaSlice. It has all
+fuctions that previous one has. Beside this, this program has some new
+fuctions and more funny. After user creating pizza on canvas, user can press
+and drag lines arround canvas. This time, all pizza will always point to the
+intersection of two lines, also color will change based on the quadrant 
+they are in. Try to draw some pizza on canvas, and drag lines trace circle,
+pizza will turn like campass.
+
+Short Response:
+
+1. (AI) What was your proess for completing this assignment with integrity?
+   
+    To better understand this assignment, first i went to DI session to 
+  know how this program will be. TA usually show us demo of program, this
+  gives me a original impressioin about the program. Then i studied write
+  up as well as the slide from DI session. These all help me and give me
+  some ideas for assignment, like how do i start it, what should i do
+  first? What should be really careful about? After this, i just follow
+  the write up and DI slide step by step. I usually do assignment at lab,
+  so every time i have trouble with code i will ask TA for help. Also, i
+  will discuss problem with friends at lab sometimes, because i think this
+  will help each other to understand concept and have better skill on
+  coding. However, we don't share code with each other, because this will
+  violate academic integrity.
+
+2. (UNIX)From your current directory how do you copy over a java file named
+  zumba from a folder four directories above? Write the full command
+  required to perform this action. Please provide the exact command as we 
+  weill not be lenient if any part of the command is incorrect or missing.
+
+  cp ../../../../zumba.java .  
+
+3. (UNIX)What does the command "man diff" do(with no quotes)?
+
+   "man diff" command will show all help information for the diff
+    command, includes a lot of useful command. 
+
+4. (UNIX)From your current directory, how do you remove all jar files in
+  your home directory?
+
+    rm ~/*.jar   
+
+5. (VIM)What is the difference between :q and :q! when using the commands
+  to close a vim file?
+
+   :q  Quit Vim. This fails when changes have been made.
+   :q! Quit without writing.
+   (bullium.com/support/vim.html) 
+ 
+6. (VIM)What does the command "gg" do(with no quotes)?
+
+   Command gg will go to first line, on the first non-blank character.
+
+7. (Java)What is method overloading?
+  
+   If two methods of a class have the same name but otherwise different
+   signatures, then the method name is said to be overload.
+   ( lecture notes chapter 6&8) Basically, overload is a class have
+   multiple methods with same name but different parameters.

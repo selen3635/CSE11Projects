@@ -1,0 +1,135 @@
+
+
+
+import java.awt.Color;
+import objectdraw.*;
+
+public class ResizablePizzaSlice extends ActiveObject {
+
+  private static final double PAUSE_TIME = 33;
+  private static final double GROWTH = 5;
+  private static final double ARC_ANGLE = 45;
+  private static final double ANGLE_OFFSET = ARC_ANGLE /2;
+
+  private static final int FIRST_QUAD_ANGLE = 45;
+  private static final int SEC_QUAD_ANGLE = FIRST_QUAD_ANGLE + 90;
+  private static final int THIRD_QUAD_ANGLE = SEC_QUAD_ANGLE + 90;
+  private static final int FOURTH_QUAD_ANGLE = THIRD_QUAD_ANGLE + 90;
+
+  private static final int HALF_SIZE = 2;  
+
+  private int newStartAngle = 0;
+  private FilledArc pizzaSlice;
+  private double size;
+  private double DOUBLE_SIZEL = 180;
+  private double HALF_SIZEL  = 45;
+
+  private static final Color FIRST_QUAD_COL = new Color(255, 216,0);
+  private static final Color SEC_QUAD_COL = new Color (219, 162, 74);
+  private static final Color THIRD_QUAD_COL = new Color(225, 35, 1);
+  private static final Color FOURTH_QUAD_COL = new Color(255, 250, 138);
+
+  // tip of pizza slice (center of arc's bounding box)
+  private Location tip;
+
+  private Line vLine;
+  private Line hLine;
+
+
+  public ResizablePizzaSlice(Location center, double size,
+    DrawingCanvas canvas, Line hLine, Line vLine) {
+    
+    Location upperLeft = new Location(center.getX()- size / HALF_SIZE,
+      center.getY() - size / HALF_SIZE);
+ 
+    if ( center.getX() > vLine.getStart().getX() &&
+      center.getY() < hLine.getStart().getY()) {
+ 
+      newStartAngle = FIRST_QUAD_ANGLE;
+      pizzaSlice = new FilledArc ( upperLeft, size, size, newStartAngle -
+        ANGLE_OFFSET, ARC_ANGLE, canvas);
+
+      pizzaSlice.setColor(FIRST_QUAD_COL);
+    }
+
+    else if ( center.getX() < vLine.getStart().getX() &&
+      center.getY() < hLine.getStart().getY() ) {
+
+      newStartAngle = SEC_QUAD_ANGLE;
+    
+      pizzaSlice = new FilledArc ( upperLeft, size, size, newStartAngle -
+        ANGLE_OFFSET, ARC_ANGLE, canvas);
+
+      pizzaSlice.setColor(SEC_QUAD_COL);
+    }
+
+    else if ( center.getX() < vLine.getStart().getX() &&
+      center.getY() > hLine.getStart().getY() ) {
+
+      newStartAngle = THIRD_QUAD_ANGLE;
+
+      pizzaSlice = new FilledArc ( upperLeft, size, size, newStartAngle -
+        ANGLE_OFFSET, ARC_ANGLE, canvas);
+
+      pizzaSlice.setColor(THIRD_QUAD_COL);
+    }
+
+    else if ( center.getX() > vLine.getStart().getX() &&
+      center.getY() > hLine.getStart().getY() ) {
+
+      newStartAngle = FOURTH_QUAD_ANGLE;
+
+      pizzaSlice = new FilledArc ( upperLeft, size, size, newStartAngle -
+        ANGLE_OFFSET, ARC_ANGLE, canvas);
+
+      pizzaSlice.setColor(FOURTH_QUAD_COL);
+    }
+
+    start(); 
+
+  }
+
+  public void run() {
+
+    boolean growth = true;
+    boolean descent =false;
+    // Infinite loop, so this always runs
+    while (true) {
+   
+      // Need to update size
+      if ( pizzaSlice.getWidth() <= DOUBLE_SIZEL && growth) {
+        
+        pizzaSlice.setSize( pizzaSlice.getWidth() + GROWTH,
+          pizzaSlice.getHeight() + GROWTH );
+
+        pizzaSlice.move( - GROWTH / HALF_SIZE, - GROWTH / HALF_SIZE);
+       
+      }  
+    
+      else if ( pizzaSlice.getWidth() >= HALF_SIZEL && descent) {
+
+        pizzaSlice.setSize( pizzaSlice.getWidth() - GROWTH,
+          pizzaSlice.getHeight() - GROWTH);
+ 
+        pizzaSlice.move( GROWTH / HALF_SIZE + GROWTH / HALF_SIZE);
+ 
+      }
+   
+      if ( pizzaSlice.getWidth() >= DOUBLE_SIZEL) {
+
+        growth = false;
+        descent = true;
+      }
+
+      if ( pizzaSlice.getWidth() <= HALF_SIZEL ) {
+
+        growth = true;
+        descent = false;
+      }
+      pause( PAUSE_TIME);
+     
+    }
+
+  }
+
+}
