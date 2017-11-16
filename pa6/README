@@ -1,0 +1,104 @@
+Name:   Xiaolong Zhou
+Login:  cs11faug
+Date:   Nov 03, 2015
+File:   README
+
+
+
+Program Description:
+
+   This program is designed to draw pizzas on canvas. Canvas is separated
+ into four quadrant. User can simply click anywhere on canvas to draw pizza
+ . Each canvas will show different color of pizza, and all pizza is point to
+ the intersections of two lines. Futhermore, user can also press and drag
+ lines arround canvas. The color of pizzas will change while user drag the
+ line, because the color of pizzas if based on which quadrant they are in.
+ Moving the lines and creating more pizza, new pizza will still point to
+ intersection of lines, but old pizzas will keep old orientation. In
+ addition, user can also resize the frame, but lines will stay same
+ proportional to where they were on the canvas. In the meantime, pizza will
+ stay in the same position where they were created. Moreover, there are
+ buttons ne the canvas, named start, stop, clear all respectively. When
+ program start, if user click and create new pizza it will spin clockwise.
+ User can click stop button to stop pizza spin, and click start to restart
+ spining pizza. The clear all button will clear all pizza on canvas if user
+ click on it. There is a slider on the bottom of canvas and a label text 
+ shows current spining speed. After user create pizza, user can increase
+ or decrease spining speed by slide the slider on the bottom. The minimum
+ speed is 1 and maximum speed is 100. When user create new pizzas, new
+ pizza will spin if old pizzas are spining otherwise pizza will stay static
+ as old pizza. Pizzas are able to be drag arround canvas, but the tip of 
+ pizza can't be drag off canvas with 5 pixels margin from canvas. User can
+ also drag mutiple pizza even with lines in a time, if pizzas and lines are
+ overlap, and user click on all of them. In this case, user can drag
+ multiple pizzas in a time.
+
+EC part(both):
+
+   For this program, it has all the same functions as previous program.
+However, this program has some more functionalities. Such as, there is one
+more button on the canvas which called "Switch Spin". User can controll the
+spin direction of pizza through this button. For example, if pizzas are
+spinning clock wise right now, it will spin counter clock wise if user 
+click this button which means after clicking this button it always change
+the the spin direction to opposite direction. Further more, there is one 
+more funny function. When user resize canvas, all pizza will move
+proportionally with canvas size. 
+
+
+
+Short Response:
+
+1. Using vim/gvim, how can you open a file from the Linux command line so
+  that you are taken directly to a specified line in the file?
+
+      vim -c :[Line number] [File name]
+
+2. How do you turn off special coloring of keywords and syntax in vim (
+  this is most evident in gvim)? For example, by default your gvim colors
+  comments differently from other parts of code ( comments are colored
+  blue by default). If you turn off syntax coloring then all the code in
+  your file will be of same color, black by default. How do you turn the
+  coloring back on?
+
+   To turn on type   :syntax on
+   To turn off type  :syntax off
+
+
+3. What is the command that you type in to viw more information on how to 
+  use vim/gvim? The specific command that we're lokking for is the one you
+  type in command mode in an open vim/gvim file, not on the terminal.
+  Typing the command will bring up a help manual for vim.
+
+     :help
+
+4. In vim, what do you type to show all the line numbers in front of each
+  line?
+
+  in command mode, type :set nu  to show all the lline numbers 
+
+5. What runtime structure holds the local variables and formal parameters
+  with each method invocation?
+
+    call stack , or the run-time stack
+
+6. What are the only things that can be declared in a Java interface? Be
+  specific with full access modifier and keywords.
+
+   An interface declaration consists of modifiers, the keyword interface,
+   the interface name, a comma-separated list of parent interfaces(if any),
+   and the interface body.
+   (https://docs.oracle.com/javase/tutorial/java/IandI/interfaceDef.html)
+   We can declare constant variables in interface, by defaul all interface
+   method headers are public and abstract. 
+   ( public static final constans) 
+ 
+7. Why are professional engineers expected to act with integrity?
+
+   As a professional engineer, we have to be honest and trustworthy as
+our basic conduct rule. This is really important for a person's whole life.
+This will build up high personal credit. All companies will like people
+who with integrity. Also, it is illegal to copy someone else work not 
+only at school but also in the real world. To be a professional engineer,
+we have to do our own work with integrity. This will help us to learn more
+stuffs by exploring thing by ourself.

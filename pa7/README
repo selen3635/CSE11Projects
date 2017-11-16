@@ -1,0 +1,114 @@
+Name:  Xiaolong Zhou
+Login: cs11faug
+Date:  11/12/2015
+Source of File: README
+
+Program Description:
+
+Program 1: PalindromeChecker
+
+    This program is designed to process the infomation that entered by
+ user and determine whether it is palindrome. "A palindrome is a word,
+ phrase, number, or other sequence of characters which reads the same
+ backward or forward. Allowances may be made for adjustments to capital 
+ letters, punctuation, and word dividers." 
+ (https://en.wikipedia.org/wiki/Palindrome) 
+ We have two different methods to decide whether it is palindrome.
+    So basically, users are alllowed to enter anything they want to check
+ whether it is palindrome, include symbols, numbers, punctuations, letters
+ for both upper case and lower case. Program will eliminate everything else
+ except letters and number. In this case, program will only consider 
+ numbers and letters and it is not case sensitive. For example, if user 
+ enter a character "a" and hit enter, it will output:
+ "Testing 3-Arg isPalindrome: a is a palindrome.
+  Testing 1-Arg isPalindrome: a is a palindrome."
+ If user enter "77778" and hit enter, it will output:
+ "Testing 3-Arg isPalindrome: 77778 is not a palindrome.
+  Testing 1-Arg isPalindrome: 77778 is not a palindrome."
+ If user enter "RaceCar", and hit enter, it will output:
+ "Testing 3-Arg isPalindrome: RaceCar is a palindrome.
+  Testing 1-Arg isPalindrome: RaceCar is a palindrome."
+ If user enter "mother", and hit enter, it will output:
+ "Testing 3-Arg isPalindrome: mother is not a palindrome.
+  Testing 1-Arg isPalindrome: mother is not a palindrome."
+ If user enter "88mom88", and hit enter, it will outpu:
+ "Testing 3-Arg isPalindrome: 88mom88 is a palindrome.
+  Testing 1-Arg isPalindrome: 88mom88 is a palindrome."
+ If user enter "@#$%@#$%" and hit enter, it will output:
+ "Testing 3-Arg isPalindrome: @#$%@#$% is a palindrome.
+  Testing 1-Arg isPalindrome: @#$%@#$% is a palindrome." The reason why
+  this is considered as a palindrome because there is no letter or number,
+  its all symbols, so this is considered as a palindrome. Similarily,
+  if user didnt enter anything and just hid enter, this will also
+  consider as a palindrome. Also, if user just enter a space/spaces, this 
+  will be considered as palindrome also. However, if user enter symbol and
+  letters/numbers together it will only consider letters/number or letters
+  and numbers. For instance, if user enter "@#$%a6a@#$%", it will output:
+  "Testing 3-Arg isPalindrome: @#$%a6a@#$% is a palindrome.
+   Testing 1-Arg isPalindrome: @#$%a6a@#$% is a palindrome."
+  To stop the program user just simply press control and D.
+
+Program 2: Spin100
+
+    This is a game design for two players. The goal of this game is to get
+score as close to 100 as possible without going over 100. There are four
+buttons and two wheels with number images on canvas. Player can click on
+spin button to spin wheel and get scores. Player 2 can't spin until either
+player 1's score is over 100 or player1 click on the "Finish player1 button"
+. After player 1 finished spin, player 2 can go ahead to spin wheel. It
+will output winner message after player 2 click on "Finish player2" or
+player2's score over 100. If both player's score over 100, that will be a 
+tie. If player 1's score over 100 and player 2's score less than 100, then
+player 2 win. If player 1's score less than 100 and player 2's score over
+100, then player 1 win. If both player's scores are less than 100 and 
+player 1's score greater than player 2's score, then player 1 win. If
+both player's scores are less than 100 and player 2's score greater than
+player 1's score, then player 2 win. If both player's socre are less than
+100, and both score are equal then this will be a tie. If player 1's score
+over 100 or player 1 has clicked on finish button then both "Click to spin
+P1" and "Finish Player1" button are disabled. If player 2's score over 100
+or player 2 has clicked on finish button then all buttons are disabled
+except restart button. At this time, it will print out winner message.
+This will result in game over, but players can click on restart button to
+restart game. If user click on restart button, eveything will be initialize
+to begining. All buttons are enabled, then players can play with it again.
+
+
+
+Short Response:
+
+1. In vim/gvim, what commands will indent N consecutive lines(starting
+from the cursor line)by one level where the indent level is defined to 
+be two spaces? This will take two vim commands: one to set the number of
+spaces to indent with each indent level(default is 8), and one to actually
+indent nconsecutive lines. Likewise what command will shift N line left
+(de-indent N lines)?
+
+
+
+2. In vim/gvim, what command wil indent an entire curly-bracket block one
+level, while the cursor is currrently on either the open or close curly
+brackey of the block? Likewise what command will shift an entire curly-
+bracket block one level left(de-indent block)?
+
+    In command mode, press v, now select the block with arrow keys.
+    Press the number (e.g. 1 or 2) how many tabs you wanted
+    Press, > or < key(by using shift key
+    It will actually indent the whole block to number of tabs.
+ (https://answers.yahoo.com/question/index?qid=20110309163325AA751OF)
+
+3. How do you open a new line below and insert(one keyboard key for both
+steps)?
+
+   type  o  will open a new line below and insert
+
+4. On the Unix command line, how can you capture(redirect) the program's
+output into a file named "output"?
+
+   >output
+
+5. How can you create an array of ints in Java and initialize it with the
+values of all single digit odd positive numbers(inclusively between 0-9),
+ all in one step/line?
+
+    int[] array = new int[] { 1, 3, 5, 7, 9};

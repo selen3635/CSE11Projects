@@ -1,0 +1,77 @@
+/*
+ * Name:   Xiaolong Zhou
+ * Login:  cs11faug
+ * Date:   11/24/2015
+ * File:   README
+ */
+
+
+
+Program Description:
+
+
+Program 1: CS11TurtleGraphics_Threaded.java
+
+  This program will create a world, and use this world to display turtle,
+and draw charactors on it. It will create multiple turtles and same time,
+and then starting to draw charactors at same time, but maybe end with
+different time. These turtles going to draw charactors are "CS11 FAUG
+JAVA UC SAN DIEGO". By default, each turtle has different color, so it will
+looks colorful when they done with drawwing. When these turtle draw 
+charactors, they have half second delay. Which means, it won't be really
+fast so we can see how do they draw the charactors.
+
+
+Program 2: Rational.java
+
+  This program is going test all methods such as add, subtract, multiply,
+and division. There are 40 tests, which include all possibilities. It 
+doesn't require user to enter anything. Test case has all possibilities to
+test whether program is correct. For example, if denominator equals to 0,
+it will throw out an exception. If denominator equals to 1, then it will
+just equals to numerator. The reduce method is going to reduce rational
+to its simplified version by dividing great common divisor. For instance,
+if a rational is 4/2, after reduce method, it will be 2. Add, subtract,
+multiply, and division, these are math method. Lets say we have two
+rational 1/2, and 1/3. If you add them together, it will be 5/6. If you
+subtract them, you will get 1/6. If you multiply them, you will get 1/6.
+If you divide them, you will get 3/2. This is how we test our program.
+I think this program has been well tested since we consider all possible
+cases.
+
+
+
+
+1. cat -n readFile
+
+2. cat -T readFile
+ 
+   cat -e readFile
+
+   end of line: $      tab:  ^I
+   
+   we can tell there is trailing whitespace on the line, when there is 
+ a space between ^I and $ symbol.
+
+3.  nl readFile
+
+    5 spaces at begining of line
+    a tab divide the line number from fist character of the line
+
+
+4.  in command mode,  type  :set nu
+
+5.  in command mode, type   :set list
+    
+    indicate end of line:  $    tab: ^I
+
+    We can tell there is trailing whitespace on the line, when there is
+    a space between ^I and $ symbol
+
+
+6.  in command mode, type   :%s/fun/amazing/g
+
+    in command mode, type :%s/fun/amazing  to find and replace the 
+    first instance of the word fun.
+ 
+  
