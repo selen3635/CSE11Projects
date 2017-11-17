@@ -10,42 +10,4 @@ be another sources that help me with my PAs.
  to a different location in memory, but the contents are the same. So we 
  can check by this way.
 
- if ( line2 == line1 ) {
 
-   System.out.println("This is a shallow copy");
- }
-
- if ( line1.equals(line2)) {
-
-   System.out.println("This is a deep copy");
- }
-
-
-3.   Point point1 = new Point(0, 0);
-     Point point2 = new Point(100, 100);
-     Point point3 = new Point(50, 50);
-     CSE11_Line line1 = new CSE11_Line(point1, point2);
-     CSE11_Line line2 = new CSE11_Line(point1, point2);
-     CSE11_Line line3 = new CSE11_Line(point1, point3);
-
-In order to check equal() method to determine if it is doint a deep
-comparison vs a shallow reference comparason.
-
-  if ( !(line1 == line2) && line1.equals(line2) ) {
-
-    System.out.println(" the euqal method is doing deep comparison");
-
-  }
-
-  now we have another line which is line3 with different point.
-  
-  if( line1.equals(line3)) {
-
-    System.out.println("the equal method is doing shallow comparison);
-
-  }
-
-  else {
-
-    System.out.println("the equal method is doing deep comparison");
-  }
