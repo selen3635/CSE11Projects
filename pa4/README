@@ -30,52 +30,6 @@ pizza will turn like campass.
 
 Short Response:
 
-1. (AI) What was your proess for completing this assignment with integrity?
-   
-    To better understand this assignment, first i went to DI session to 
-  know how this program will be. TA usually show us demo of program, this
-  gives me a original impressioin about the program. Then i studied write
-  up as well as the slide from DI session. These all help me and give me
-  some ideas for assignment, like how do i start it, what should i do
-  first? What should be really careful about? After this, i just follow
-  the write up and DI slide step by step. I usually do assignment at lab,
-  so every time i have trouble with code i will ask TA for help. Also, i
-  will discuss problem with friends at lab sometimes, because i think this
-  will help each other to understand concept and have better skill on
-  coding. However, we don't share code with each other, because this will
-  violate academic integrity.
-
-2. (UNIX)From your current directory how do you copy over a java file named
-  zumba from a folder four directories above? Write the full command
-  required to perform this action. Please provide the exact command as we 
-  weill not be lenient if any part of the command is incorrect or missing.
-
+2.(UNIX)From your current directory copy over a java file from a folder four directories above? 
   cp ../../../../zumba.java .  
-
-3. (UNIX)What does the command "man diff" do(with no quotes)?
-
-   "man diff" command will show all help information for the diff
-    command, includes a lot of useful command. 
-
-4. (UNIX)From your current directory, how do you remove all jar files in
-  your home directory?
-
-    rm ~/*.jar   
-
-5. (VIM)What is the difference between :q and :q! when using the commands
-  to close a vim file?
-
-   :q  Quit Vim. This fails when changes have been made.
-   :q! Quit without writing.
-   (bullium.com/support/vim.html) 
  
-6. (VIM)What does the command "gg" do(with no quotes)?
-
-   Command gg will go to first line, on the first non-blank character.
-
-7. (Java)What is method overloading?
-  
-   If two methods of a class have the same name but otherwise different
-   signatures, then the method name is said to be overload.
-   ( lecture notes chapter 6&8) Basically, overload is a class have
-   multiple methods with same name but different parameters.
