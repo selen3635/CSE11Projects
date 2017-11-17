@@ -33,38 +33,5 @@ I think this program has been well tested since we consider all possible
 cases.
 
 
-
-
-1. cat -n readFile
-
-2. cat -T readFile
- 
-   cat -e readFile
-
-   end of line: $      tab:  ^I
-   
-   we can tell there is trailing whitespace on the line, when there is 
- a space between ^I and $ symbol.
-
-3.  nl readFile
-
-    5 spaces at begining of line
-    a tab divide the line number from fist character of the line
-
-
-4.  in command mode,  type  :set nu
-
-5.  in command mode, type   :set list
-    
-    indicate end of line:  $    tab: ^I
-
-    We can tell there is trailing whitespace on the line, when there is
-    a space between ^I and $ symbol
-
-
-6.  in command mode, type   :%s/fun/amazing/g
-
-    in command mode, type :%s/fun/amazing  to find and replace the 
-    first instance of the word fun.
  
   
