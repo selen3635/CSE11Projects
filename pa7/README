@@ -71,40 +71,16 @@ to begining. All buttons are enabled, then players can play with it again.
 
 
 
-Short Response:
-
-1. In vim/gvim, what commands will indent N consecutive lines(starting
-from the cursor line)by one level where the indent level is defined to 
-be two spaces? This will take two vim commands: one to set the number of
-spaces to indent with each indent level(default is 8), and one to actually
-indent nconsecutive lines. Likewise what command will shift N line left
-(de-indent N lines)?
-
-
-
-2. In vim/gvim, what command wil indent an entire curly-bracket block one
-level, while the cursor is currrently on either the open or close curly
-brackey of the block? Likewise what command will shift an entire curly-
-bracket block one level left(de-indent block)?
-
     In command mode, press v, now select the block with arrow keys.
     Press the number (e.g. 1 or 2) how many tabs you wanted
     Press, > or < key(by using shift key
     It will actually indent the whole block to number of tabs.
  (https://answers.yahoo.com/question/index?qid=20110309163325AA751OF)
 
-3. How do you open a new line below and insert(one keyboard key for both
-steps)?
 
    type  o  will open a new line below and insert
-
-4. On the Unix command line, how can you capture(redirect) the program's
-output into a file named "output"?
+   
+ capture(redirect) the program's output into a file named "output"?
 
    >output
 
-5. How can you create an array of ints in Java and initialize it with the
-values of all single digit odd positive numbers(inclusively between 0-9),
- all in one step/line?
-
-    int[] array = new int[] { 1, 3, 5, 7, 9};
