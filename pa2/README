@@ -56,33 +56,19 @@ to run the code. After that you can play with it. NO QUOTATION MARK)
 
 Short Response:
 
-1. Why is it considered an integrity violation if a student submits code
-   copied from someone/somewhere else?
-   
-   Because as a student, we have to be honesty, respectful for our
-   homework, we should do homework by ourself. Of course we can ask
-   questions about homework, but if we copy someone/somewhere work,
-   it will consider as cheating. This violates the rules.
-   This is integrity violation.
 
-2. What is the Linux command to rename a file?
-   What is the command to copy a file?
+2.  rename a file?
+    copy a file?
    mv old-filename new-filename
    cp old-filename new-filename
    (hint: http://www.sdsc.edu/CCMS/DEX/doc/Basic-Unix-
    commands.htm)
 
-3. What are three ways to enter insert mode in vim?
+3. insert mode
    "i" "a" "o"
+  
 
-4. What is a method?
-   A method is like a funcion with a set of code, we can call it at any
-   point inside our program by utlizing the method name.
-   (idea from:
-   http://mathbits.com/MathBits/Java/Methods/Lesson1.htm)   
-
-5. What happens when you type ":split" in command mode in vim?
+5.  ":split" in command mode in vim?
    It will split the terminal screen into two screen horizontally.
  
-6. Answer : Tab
 
