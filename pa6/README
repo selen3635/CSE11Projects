@@ -44,42 +44,17 @@ proportionally with canvas size.
 
 Short Response:
 
-1. Using vim/gvim, how can you open a file from the Linux command line so
-  that you are taken directly to a specified line in the file?
+1.  open file to specific line
 
       vim -c :[Line number] [File name]
 
-2. How do you turn off special coloring of keywords and syntax in vim (
-  this is most evident in gvim)? For example, by default your gvim colors
-  comments differently from other parts of code ( comments are colored
-  blue by default). If you turn off syntax coloring then all the code in
-  your file will be of same color, black by default. How do you turn the
-  coloring back on?
-
-   To turn on type   :syntax on
-   To turn off type  :syntax off
-
-
-3. What is the command that you type in to viw more information on how to 
-  use vim/gvim? The specific command that we're lokking for is the one you
-  type in command mode in an open vim/gvim file, not on the terminal.
-  Typing the command will bring up a help manual for vim.
-
-     :help
-
-4. In vim, what do you type to show all the line numbers in front of each
-  line?
-
   in command mode, type :set nu  to show all the lline numbers 
 
-5. What runtime structure holds the local variables and formal parameters
-  with each method invocation?
 
     call stack , or the run-time stack
+    holds local var and formal para with ea method invocation
 
-6. What are the only things that can be declared in a Java interface? Be
-  specific with full access modifier and keywords.
-
+Interface:
    An interface declaration consists of modifiers, the keyword interface,
    the interface name, a comma-separated list of parent interfaces(if any),
    and the interface body.
@@ -88,12 +63,4 @@ Short Response:
    method headers are public and abstract. 
    ( public static final constans) 
  
-7. Why are professional engineers expected to act with integrity?
 
-   As a professional engineer, we have to be honest and trustworthy as
-our basic conduct rule. This is really important for a person's whole life.
-This will build up high personal credit. All companies will like people
-who with integrity. Also, it is illegal to copy someone else work not 
-only at school but also in the real world. To be a professional engineer,
-we have to do our own work with integrity. This will help us to learn more
-stuffs by exploring thing by ourself.
