@@ -46,20 +46,11 @@ image will be disordered again, so thait user can play with it again.
 Have fun. :)
 
 
-Short Response:
-
-1. In vim, how do you move the cursor to the end of a line with a single
-  command? To the begining of a line with a single command?
-
-  In command mode, $ will go to the end of line, and
+ In command mode, $ will go to the end of line, and
                    0 will go to the begining of line.
 
 
-2. How do you hight/select a line in vim?
-
-   V  
-
-3. What does the keyword static mean in regards to variables?
+static mean in regards to variables
 
     From the website:
     "The static keyword in Java means that the variable or function is
@@ -68,24 +59,18 @@ Short Response:
     (http://stackoverflow.com/questions/413898/what-does-the-static-
      keyword-do-in-a-class)
 
-4. What does the keyword static mean in regards to methods? Provide an 
-  example use of a static method.
 
   "Static" mean that the mothod is associated with the class, not a 
   specific instance(object) of that class. This means that you can call
   all a static method without creating an object of the class."
 
-  (http://stackoverflow.com/questions/2390063/what-does-public-
-   static-void-mean-in-java)
 
-5. What is overriding? Give an example from a previous/current assignment.
+overriding
 
   "overriding mean to override the functionality of an existing method"
-  (http://www.tutorialspoint.com/java/java_overriding.htm)
 
-  public void 
 
-6. Using the cut command, how do you extract out only the columns 5 through
-  13 in a file named foo?
+6.  extract out only the columns 5 through
+  13 in a file named foo
 
    cut -c5-13 foo
