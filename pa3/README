@@ -50,38 +50,31 @@ face for more than half second.
 
 Short Response:
 
-1. How do you jump to a certain line number in your code with a single
-   command in vim?
+1. jump to a certain line number
   
    Must be in command mode, type line number(where you want to jump)
    with capital G. For instance, if user want to jump to line 35,
    then in command mode, just type 35G. 
 
-2. What command sets auto-indentation in vim? What command turns off
-   (unsets) auto-indentation in vim?
+2. sets auto-indentation 
    Type ":set autoindent" to set auto-indentation.
    Type ":set noautoindent" to turn off auto-indentation.
-   (http://vim.wikia.com/wiki/Indenting_source_code)
-   (http://vim.wikia.com/wiki/How_to_stop_auto_indenting)
 
-3. What is the command to undo changes in vim?
+3. undo changes in vim?
 
    In command mode, type "u" to undo the last change in vim.
 
-4. In vim, in command mode how do you move forward one word in a line of
-   code? Move back one word? (Not arrow keys)
+4.  move forward one word in a line of
+   code? Move back one word
 
    l - move forward one word
    h - move back one word
 
-5. How can you remove all.class files in a Unix directory with a single
-   command?
+5. remove all.class files
 
    rm *.class
 
-6. How do you remove a Unix directory? Define the commands you would run
-   on the terminal when the directory is empty and when it is not empty.
-   How do these command(s) differ?
+6. remove a Unix directory
   
    Type "rmdir directoryname" in terminal to remove a directory.(empty)
    Type "rm -rf directory" in terminal to remove a directory. (not empty)
@@ -89,12 +82,6 @@ Short Response:
    The first one will prompt a verification if there is content in folder.
    The second one will force delete entire folder and its contents without
    prompting for user verrification.
-   (https://answers.yahoo.com/question/index;)
-  
-7. What is the command to clear a Unix terminal screen? 
-
-   Type "clear" to clear terminal screen.
-   (https://en.wikipedia.org/wiki/Clear_%28Unix%29)
 
 
 
